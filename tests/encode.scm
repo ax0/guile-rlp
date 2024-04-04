@@ -1,3 +1,5 @@
+#!/usr/bin/guile -s
+!#
 ;; RLP encoding tests.
 (import (only (rlp) number->be-bytes rlp-encode)
 	(scheme base)

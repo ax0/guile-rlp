@@ -1,3 +1,5 @@
+#!/usr/bin/guile -s
+!#
 ;; RLP decoding tests.
 (import (only (rlp) number->be-bytes rlp-decode)
 	(scheme base)

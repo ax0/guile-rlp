@@ -1,0 +1,4 @@
+#+TITLE: guile-rlp
+
+* Description
+This library is a Scheme implementation of [[https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/][RLP serialisation]] as defined in the [https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/][Ethereum Yellow Paper]. A build script is provided for Guile.

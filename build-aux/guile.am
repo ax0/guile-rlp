@@ -14,7 +14,8 @@ nobase_go_DATA = $(GOBJECTS)
 guile_install_go_files = install-nobase_goDATA
 $(guile_install_go_files): install-nobase_dist_modDATA
 
-CLEANFILES = $(GOBJECTS)
+LOGS != ls *.log
+CLEANFILES = $(GOBJECTS) $(LOGS)
 GUILE_WARNINGS = -Wunbound-variable -Warity-mismatch -Wformat
 SUFFIXES = .sld .go
 .sld.go:

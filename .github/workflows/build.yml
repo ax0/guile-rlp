@@ -1,0 +1,21 @@
+name: build
+
+on:
+  push:
+    paths-ignore:
+    - 'README.org'
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Guix
+      uses: PromyLOPh/guix-install-action@v1
+    - name: Build package
+      run: |
+        guix build -f guix.scm

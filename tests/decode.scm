@@ -1,11 +1,10 @@
 #!/usr/bin/guile -s
 !#
 ;; RLP decoding tests.
-(import (only (rlp) number->be-bytes rlp-decode)
-	(scheme base)
-	(srfi 1)
+(import (only (rlp) rlp-decode)
 	(srfi 64))
-(include "data.scm")
+
+(load "data.scm")
 
 (test-begin "bv-decode-test")
 (for-each

@@ -1,5 +1,9 @@
 ;; RLP encoding/decoding test data
 ;; Examples taken from https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/
+(import
+ (only (rlp) number->be-bytes rlp-encode)
+ (scheme base)
+ (srfi 1))
 (define bv-test-data
   (zip
    (list ; Unencoded strings

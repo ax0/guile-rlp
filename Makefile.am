@@ -10,5 +10,8 @@ TESTS_ENVIRONMENT = $(AM_V_GEN)$(top_builddir)/pre-inst-env
 
 EXTRA_DIST =					\
 	README.org				\
-	autogen.sh		\
+	autogen.sh				\
+	pre-inst-env.in
+EXTRA_DIST +=					\
+	$(TESTS)				\
 	tests/data.scm

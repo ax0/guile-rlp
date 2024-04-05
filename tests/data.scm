@@ -31,7 +31,7 @@
     (map string->utf8 '("cat" "dog"))
     (list)
     (list (list) (list (list)) (list (list) (list (list)))))
-   (list
+   (list ; Encoded lists
     (bytevector-append
      (bytevector #xc8 #x83)
      (string->utf8 "cat")
